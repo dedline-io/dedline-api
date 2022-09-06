@@ -1,0 +1,12 @@
+{
+  "label": "New Hampshire",
+  "value": "NH",
+  "deadline": "20221026",
+  "primaryDeadline": "20220831",
+  "primaryDate": "20220913",
+  "url": "https://sos.nh.gov/elections/voters/register-to-vote/",
+  "onlineAccepted": false,
+  "lastMinuteAccepted": true,
+  "notes": "In New Hampshire, the deadline varies between 6 and 13 days before election day depending on the town you live in (13 days is shown here, but you could have more time)! Check the state's website above for specific info. Also, in NH, those people convicted of felonies have the right to vote after serving their sentence!",
+  "emoji": "🌳🌳🌳🌳🌳"
+}

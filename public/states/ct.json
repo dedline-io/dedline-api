@@ -1,0 +1,12 @@
+{
+  "label": "Connecticut",
+  "value": "CT",
+  "deadline": "20221026",
+  "primaryDeadline": "20220909",
+  "primaryDate": "20220914",
+  "url": "https://voterregistration.ct.gov/OLVR/welcome.do",
+  "onlineAccepted": true,
+  "lastMinuteAccepted": true,
+  "notes": "For some reason, Connecticut's voter registration website is down every night from midnight until 6AM. So... just know that... also, in Connecticut, those with felony convictions can register and vote after serving their sentence and parole.",
+  "emoji": "⚓️⚓️⚓️⚓️⚓️"
+}

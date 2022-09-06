@@ -1,0 +1,12 @@
+{
+  "label": "Wyoming",
+  "value": "WY",
+  "deadline": "20221025",
+  "primaryDeadline": "20220802",
+  "primaryDate": "20220816",
+  "url": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx",
+  "onlineAccepted": false,
+  "lastMinuteAccepted": true,
+  "notes": "In Wyoming, unless you register in person, you have to get your registration form notarized. Sorry... you can register and vote absentee ballot on election day, though!",
+  "emoji": "🐮🐮🐮🐮🐮"
+}

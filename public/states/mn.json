@@ -1,0 +1,12 @@
+{
+  "label": "Minnesota",
+  "value": "MN",
+  "deadline": "20221018",
+  "primaryDeadline": "20220719",
+  "primaryDate": "20220809",
+  "url": "https://www.sos.state.mn.us/elections-voting/register-to-vote/",
+  "onlineAccepted": true,
+  "lastMinuteAccepted": true,
+  "emoji": "🚤🚤🚤🚤🚤",
+  "notes": "In Minnesota, those with felony convictions can register and vote after serving their sentence, parole, and probation."
+}

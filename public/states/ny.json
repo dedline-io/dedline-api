@@ -1,0 +1,12 @@
+{
+  "label": "New York",
+  "value": "NY",
+  "deadline": "20221014",
+  "primaryDeadline": "20220603",
+  "primaryDate": "20220628",
+  "url": "https://www.ny.gov/services/register-vote",
+  "onlineAccepted": true,
+  "lastMinuteAccepted": false,
+  "emoji": "🗽🗽🗽🗽🗽",
+  "notes": "In New York, those with felony convictions get their voting rights restored after serving their sentence!"
+}

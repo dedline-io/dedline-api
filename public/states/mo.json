@@ -1,0 +1,12 @@
+{
+  "label": "Missouri",
+  "value": "MO",
+  "deadline": "20221012",
+  "primaryDeadline": "20220706",
+  "primaryDate": "20220802",
+  "url": "https://www.sos.mo.gov/elections/goVoteMissouri/register",
+  "onlineAccepted": true,
+  "lastMinuteAccepted": false,
+  "emoji": "🌼🌼🌼🌼🌼",
+  "notes": "In Missouri, those with felony convictions can register and vote after serving their sentence, parole, and probation."
+}
