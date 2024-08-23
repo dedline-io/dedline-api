@@ -1,12 +1,12 @@
 {
   "label": "New York",
   "value": "NY",
-  "deadline": "20221014",
-  "primaryDeadline": "20220603",
-  "primaryDate": "20220628",
+  "deadline": "20241026",
+  "primaryDeadline": "20240323",
+  "primaryDate": "20240402",
   "url": "https://www.ny.gov/services/register-vote",
   "onlineAccepted": true,
   "lastMinuteAccepted": false,
   "emoji": "🗽🗽🗽🗽🗽",
-  "notes": "In New York, those with felony convictions get their voting rights restored after serving their sentence!"
+  "notes": "You can register to vote in person a few days after the mail in/online deadline! (Mail in is Oct 21st for the general) In New York, those with felony convictions get their voting rights restored after serving their sentence!"
 }

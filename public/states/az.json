@@ -1,10 +1,10 @@
 {
   "label": "Arizona",
   "value": "AZ",
-  "deadline": "20221012",
-  "primaryDeadline": "20220705",
-  "primaryDate": "20220802",
-  "url": "https://servicearizona.com/VoterRegistration/selectLanguage",
+  "deadline": "20241007",
+  "primaryDeadline": "20240701",
+  "primaryDate": "20240730",
+  "url": "https://azsos.gov/elections/voters",
   "onlineAccepted": true,
   "lastMinuteAccepted": false,
   "emoji": "☀️☀️☀️☀️☀️"

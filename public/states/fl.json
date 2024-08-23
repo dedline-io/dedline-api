@@ -1,10 +1,10 @@
 {
   "label": "Florida",
   "value": "FL",
-  "deadline": "20221011",
-  "primaryDeadline": "20220725",
-  "primaryDate": "20220823",
-  "url": "https://registertovoteflorida.gov/home",
+  "deadline": "20241007",
+  "primaryDeadline": "20240722",
+  "primaryDate": "20240822",
+  "url": "https://dos.fl.gov/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/",
   "onlineAccepted": true,
   "lastMinuteAccepted": false,
   "emoji": "🐊🐊🐊🐊🐊"

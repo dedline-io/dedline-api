@@ -1,9 +1,9 @@
 {
   "label": "Vermont",
   "value": "VT",
-  "deadline": "20221108",
-  "primaryDeadline": "20220809",
-  "primaryDate": "20220809",
+  "deadline": "20241104",
+  "primaryDeadline": "20240813",
+  "primaryDate": "20240813",
   "url": "https://sos.vermont.gov/elections/voters/registration/",
   "onlineAccepted": true,
   "lastMinuteAccepted": true,

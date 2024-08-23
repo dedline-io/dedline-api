@@ -1,12 +1,12 @@
 {
   "label": "Utah",
   "value": "UT",
-  "deadline": "20221028",
-  "primaryDeadline": "20220617",
-  "primaryDate": "20220628",
+  "deadline": "20241025",
+  "primaryDeadline": "20240223",
+  "primaryDate": "20240305",
   "url": "https://secure.utah.gov/voterreg/index.html",
   "onlineAccepted": true,
   "lastMinuteAccepted": true,
   "emoji": "🏜🏜🏜🏜🏜",
-  "notes": "The deadline is at 5PM on the deadline day! Also, in Utah, those with felony convictions get their voting rights restored after serving their sentence!"
+  "notes": "The (pre same day registration) deadline is at 5PM on the deadline day! Also, in Utah, those with felony convictions get their voting rights restored after serving their sentence!"
 }

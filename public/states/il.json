@@ -1,9 +1,9 @@
 {
   "label": "Illinois",
   "value": "IL",
-  "deadline": "20221024",
-  "primaryDeadline": "20220612",
-  "primaryDate": "20220628",
+  "deadline": "20241020",
+  "primaryDeadline": "20240303",
+  "primaryDate": "20240319",
   "url": "https://ova.elections.il.gov/",
   "onlineAccepted": true,
   "lastMinuteAccepted": true,

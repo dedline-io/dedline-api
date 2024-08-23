@@ -1,12 +1,12 @@
 {
   "label": "Washington",
   "value": "WA",
-  "deadline": "20221031",
-  "primaryDeadline": "20220725",
-  "primaryDate": "20220802",
+  "deadline": "20241028",
+  "primaryDeadline": "20240729",
+  "primaryDate": "20240806",
   "url": "https://www.sos.wa.gov/elections/register.aspx",
   "onlineAccepted": true,
   "lastMinuteAccepted": true,
-  "notes": "Even though you can register in person up until election day, the deadline to register online is 8 days before! Also, as of this year, those convicted of felonies in the state of Washington get their voting rights restored after serving their sentence!",
+  "notes": "Even though you can register in person up until election day, the deadline to register online is 8 days before! Those convicted of felonies in the state of Washington get their voting rights restored after serving their sentence!",
   "emoji": "🌲🌲🌲🌲🌲"
 }

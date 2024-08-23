@@ -1,12 +1,12 @@
 {
   "label": "New Jersey",
   "value": "NJ",
-  "deadline": "20221018",
-  "primaryDeadline": "20220517",
-  "primaryDate": "20220607",
+  "deadline": "20241015",
+  "primaryDeadline": "20240514",
+  "primaryDate": "20240604",
   "url": "https://nj.gov/state/elections/voter-registration.shtml",
   "onlineAccepted": true,
   "lastMinuteAccepted": false,
   "emoji": "🎡🎡🎡🎡🎡",
-  "notes": "In New Jersey, those with felony convictions get their voting rights restored after serving their sentence!"
+  "notes": "There's a congressional election happening between the federal primary and general this year in NJ in September! The deadline for that one is Aug 28. In New Jersey, those with felony convictions get their voting rights restored after serving their sentence!"
 }

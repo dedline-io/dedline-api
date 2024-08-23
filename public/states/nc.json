@@ -1,12 +1,12 @@
 {
   "label": "North Carolina",
   "value": "NC",
-  "deadline": "20221014",
-  "primaryDeadline": "20220422",
-  "primaryDate": "20220517",
+  "deadline": "20241011",
+  "primaryDeadline": "20240209",
+  "primaryDate": "20240305",
   "url": "https://www.ncsbe.gov/registering/how-register",
   "onlineAccepted": true,
-  "lastMinuteAccepted": false,
-  "notes": "If you missed the deadline, you can register and vote in person during early voting! Check the state website above. Also, in NC, those convicted of felonies get their voting rights restored after serving their sentence!",
+  "lastMinuteAccepted": true,
+  "notes": "If you missed the deadline, you can register and vote in person during early voting and on election day! Check the state website above. Also, in NC, those convicted of felonies get their voting rights restored after serving their sentence!",
   "emoji": "🍩🍩🍩🍩🍩"
 }

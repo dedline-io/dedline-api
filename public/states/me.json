@@ -1,11 +1,11 @@
 {
   "label": "Maine",
   "value": "ME",
-  "deadline": "20221024",
-  "primaryDeadline": "20220530",
-  "primaryDate": "20220614",
-  "url": "https://www.maine.gov/sos/cec/elec/upcoming/index.html",
-  "onlineAccepted": false,
+  "deadline": "20241015",
+  "primaryDeadline": "20240213",
+  "primaryDate": "20240305",
+  "url": "https://registertovote.sos.maine.gov/",
+  "onlineAccepted": true,
   "lastMinuteAccepted": true,
   "emoji": "🦞🦞🦞🦞🦞",
   "notes": "Maine is one of three states that lets citizens vote from prison (and/or after serving their sentence)!"
