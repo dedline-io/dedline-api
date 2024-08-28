@@ -5,3 +5,9 @@
   from = "/"
   to = "/states.json"
   status = 302
+
+[[headers]]
+  for = "/states.json"
+
+[headers.values]
+  Access-Control-Allow-Origin = "*"
