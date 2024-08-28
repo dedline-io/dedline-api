@@ -1,9 +1,11 @@
 # Dedline API 🇺🇸
 🗳 A simple API for US election deadline info 🗳
 
-This is a [static api](https://www.seancdavis.com/posts/lets-talk-about-static-apis/), taken from the JSON file in [dedline.io](dedline.io), that anyone can access for election information (2022 currently, hopefully will be updated in the future!)
+This is a [static api](https://www.seancdavis.com/posts/lets-talk-about-static-apis/), taken from the JSON file in [dedline.io](dedline.io), that anyone can access for election information (Updated for 2024!)
 
-If you need the base URL, just give me an email at dedline-io@protonmail.com - it's free and I'm hoping that people can use this info towards a good cause. :) Also, feel free to fork this repo and use this JSON for your own projects! 
+The base URL is `https://dedline-api.netlify.app/`. Please don't spam it. :) 
+
+Check out [dedline.io](https://www.dedline.io) if you want to see it in action!
 
 ## Endpoints:
 
