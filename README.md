@@ -1,87 +1,220 @@
 # Dedline API 🇺🇸
 🗳 A simple API for US election deadline info 🗳
 
-This is a [static api](https://www.seancdavis.com/posts/lets-talk-about-static-apis/), taken from the JSON file in [dedline.io](dedline.io), that anyone can access for election information (Updated for 2024!)
+This is a [static api](https://www.seancdavis.com/posts/lets-talk-about-static-apis/), taken from the JSON file in [dedline.io](dedline.io), that anyone can access for election information (Updated for 2026!)
 
-The base URL is `https://dedline-api.netlify.app/`. Please don't spam it. :) 
+**Base URL:** `https://dedline-api.netlify.app/`
 
-Check out [dedline.io](https://www.dedline.io) if you want to see it in action!
+**Features:**
+- ✅ All 50 states + DC
+- ✅ Primary and general election deadlines
+- ✅ Official voter registration websites
+- ✅ Same-day registration info
+- ✅ Online registration availability
+- ✅ Free and open source!
+
+Check out [dedline.io](https://www.dedline.io) to see it in action, or use our [embeddable widgets](https://github.com/dedline-io/dedline-io/blob/main/WIDGET_DOCS.md)!
 
 ## Endpoints:
 
-**GET ALL INFO**
+### Get All States
 
-`/states.json`
+**`GET /states.json`**
 
-This returns an array of all US states (including DC), as objects, in the following format:
+Returns an array of all US states (including DC) with their voter registration information.
 
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/states.json
 ```
- {
-  "states: [
+
+**Response Format:**
+
+```json
+{
+  "states": [
     {
-      "label": STATE NAME (string)
-      "value": STATE ABBREVIATION (string)
-      "deadline": GENERAL ELECTION VOTER REGISTRATION DEADLINE IN YYYYMMDD FORMAT (string)
-      "primaryDeadline": PRIMARY ELECTION VOTER REGISTRATION DEADLINE IN YYYYMMDD FORMAT (string)
-      "primaryDate": PRIMARY ELECTION DATE IN YYYYMMDD FORMAT (string)
-      "url": OFFICIAL STATE VOTER REGISTRATION WEBSITE (or info page if voters can't register online) (string)
-      "onlineAccepted": WHETHER OR NOT VOTERS CAN REGISTER ONLINE (boolean)
-      "lastMinuteAccepted": WHETHER OR NOT VOTERS CAN REGISTER DAY OF ELECTION (boolean)
-      "emoji": Just some cute state themed-emoji (string)
-      "notes": Optional, returns details about this state, like whether 16 year olds can register to vote, or voting rules for those with felonies
-    },
+      "label": "California",
+      "value": "CA",
+      "deadline": "20261019",
+      "primaryDeadline": "20260518",
+      "primaryDate": "20260602",
+      "generalElectionDate": "20261103",
+      "url": "https://www.sos.ca.gov/elections/voter-registration/",
+      "onlineAccepted": true,
+      "lastMinuteAccepted": true,
+      "emoji": "🌴🌴🌴🌴🌴",
+      "notes": "In California, those convicted of felonies can register and vote after serving their sentence."
+    }
   ]
-
-```
- 
- **GET STATE SPECIFIC INFO**
- 
- `/states/[STATE ABBREVIATION].json`
- 
- This returns the state that you passed in's specific object in the array above. So, the response looks like
- 
-```
-  {
-      "label": STATE NAME (string)
-      "value": STATE ABBREVIATION (string)
-      "deadline": GENERAL ELECTION VOTER REGISTRATION DEADLINE IN YYYYMMDD FORMAT (string)
-      "primaryDeadline": PRIMARY ELECTION VOTER REGISTRATION DEADLINE IN YYYYMMDD FORMAT (string)
-      "primaryDate": PRIMARY ELECTION DATE IN YYYYMMDD FORMAT (string)
-      "url": OFFICIAL STATE VOTER REGISTRATION WEBSITE (or info page if voters can't register online) (string)
-      "onlineAccepted": WHETHER OR NOT VOTERS CAN REGISTER ONLINE (boolean)
-      "lastMinuteAccepted": WHETHER OR NOT VOTERS CAN REGISTER DAY OF ELECTION (boolean)
-      "emoji": Just some cute state themed-emoji (string)
-      "notes": Optional, returns details about this state, like whether 16 year olds can register to vote, or or voting rules for those with felonies
-    },
-
+}
 ```
 
-**GET STATES THAT ALLOW REGISTRATION ON ELECTION DAY**
+**Field Descriptions:**
+- `label` - Full state name (string)
+- `value` - Two-letter state abbreviation (string)
+- `deadline` - General election voter registration deadline in YYYYMMDD format (string)
+- `primaryDeadline` - Primary election voter registration deadline in YYYYMMDD format (string)
+- `primaryDate` - Primary election date in YYYYMMDD format (string)
+- `generalElectionDate` - General election date in YYYYMMDD format (string) - November 3, 2026 for most states
+- `url` - Official state voter registration website (string)
+- `onlineAccepted` - Whether voters can register online (boolean)
+- `lastMinuteAccepted` - Whether voters can register on election day (boolean)
+- `emoji` - State-themed emoji (string)
+- `notes` - Additional details about state registration (string, optional)
+ 
+### Get Specific State
 
-`/lastMinuteAccepted.json`
+**`GET /states/[STATE_ABBREVIATION].json`**
 
-This returns an array of states (just their abbreviations, as strings) that allow for last minute voter registration on election day. (They all have their own rules so it might be a good idea to check their websites listed under their `state` object!)
+Returns voter registration information for a specific state.
+
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/states/ca.json
+```
+
+**Response Format:**
+```json
+{
+  "label": "New York",
+  "value": "NY",
+  "deadline": "20261024",
+  "primaryDeadline": "20260528",
+  "primaryDate": "20260623",
+  "generalElectionDate": "20261103",
+  "url": "https://www.ny.gov/services/register-vote",
+  "onlineAccepted": true,
+  "lastMinuteAccepted": false,
+  "emoji": "🗽🗽🗽🗽🗽",
+  "notes": "In New York, those with felony convictions get their voting rights restored after serving their sentence!"
+}
+```
+
+### Get Same-Day Registration States
+
+**`GET /lastMinuteAccepted.json`**
+
+Returns states that allow voter registration on election day.
+
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/lastMinuteAccepted.json
+```
+
+**Response Format:**
 
 ```
 ['STATE', 'STATE_2', STATE_3']
 ```
 
 
-**GET STATES THAT DON'T SUPPORT ONLINE VOTER REGISTRATION**
+### Get States Without Online Registration
 
-`/onlineNotAccepted.json`
+**`GET /onlineNotAccepted.json`**
 
-This returns an array of states (also just their abbreviations, as strings) that require voters to register in person or via the mail (or whatever, just not online)!.
+Returns states that require voters to register in person or by mail (no online registration available).
+
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/onlineNotAccepted.json
+```
+
+**Response Format:**
 
 ```
 ['STATE', 'STATE_2', STATE_3']
 ```
 
 
-## Ideas/Issues:
-Feel free to open any issues or ideas for new endpoints, new data to be added, etc in the issue section!
+### Get Upcoming Deadlines
 
-## Contact:
+**`GET /upcoming.json`**
+
+Returns states with primary or general registration deadlines in the next 30 days. Automatically switches from primary to general election deadlines after primary season ends.
+
+**Note:** This endpoint is automatically updated daily via GitHub Actions.
+
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/upcoming.json
+```
+
+**Response Format:**
+```json
+{
+  "primary": [
+    {
+      "state": "TX",
+      "label": "Texas",
+      "deadline": "20260202",
+      "daysUntil": 8
+    }
+  ],
+  "general": []
+}
+```
+
+### Get Statistics
+
+**`GET /stats.json`**
+
+Returns summary statistics about voter registration across all states.
+
+**Example Request:**
+```bash
+curl https://dedline-api.netlify.app/stats.json
+```
+
+**Response Format:**
+```json
+{
+  "totalStates": 51,
+  "onlineRegistrationAvailable": 41,
+  "sameDayRegistrationAvailable": 21,
+  "lastUpdated": "2026-01-25"
+}
+```
+
+## Usage Examples
+
+### JavaScript/Node.js
+```javascript
+// Fetch all states
+fetch('https://dedline-api.netlify.app/states.json')
+  .then(res => res.json())
+  .then(data => console.log(data.states));
+
+// Fetch specific state
+fetch('https://dedline-api.netlify.app/states/ny.json')
+  .then(res => res.json())
+  .then(data => console.log(data));
+```
+
+### Python
+```python
+import requests
+
+# Fetch all states
+response = requests.get('https://dedline-api.netlify.app/states.json')
+states = response.json()['states']
+
+# Fetch specific state
+response = requests.get('https://dedline-api.netlify.app/states/ca.json')
+california = response.json()
+```
+
+## CORS & Rate Limiting
+
+- **CORS:** Enabled for all origins - safe to use from browsers
+- **Rate Limiting:** Please be respectful with requests. This is a free, community resource!
+
+## Attribution
+
+If you use this API in your project, we'd appreciate a link back to [dedline.io](https://www.dedline.io) or this repository. Thanks for helping spread the word about voter registration! 🗳️
+
+## Ideas/Issues
+Feel free to open any [issues](https://github.com/dedline-io/dedline-api/issues) or ideas for new endpoints, new data to be added, etc!
+
+## Contact
 dedline-io@protonmail.com
-
- 
