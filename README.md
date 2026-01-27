@@ -131,7 +131,9 @@ curl https://dedline-api.netlify.app/onlineNotAccepted.json
 
 **`GET /upcoming.json`**
 
-Returns states with primary or general registration deadlines in the next 30 days.
+Returns states with primary or general registration deadlines in the next 30 days. Automatically switches from primary to general election deadlines after primary season ends.
+
+**Note:** This endpoint is automatically updated daily via GitHub Actions.
 
 **Example Request:**
 ```bash
